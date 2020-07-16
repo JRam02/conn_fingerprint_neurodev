@@ -1,6 +1,5 @@
-### Refining the fingerprint: Optimising connectome fingerprinting for neurodevelopment
+## Optimising connectome fingerprinting for neurodevelopmental conditions
 
 Authors: Jivesh Ramduny & Clare Kelly
-Location: Imaging Mind Architecture Lab, Trinity College Dublin
 
-test
+### Overview
