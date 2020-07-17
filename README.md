@@ -64,4 +64,4 @@ The spatial distribution of FC-based measures have shown significantly lower tes
 
 ### Network Organisation
 
-Several studies have demonstrated
+Several studies have demonstrated that some functional networks yield stronger predictive power in facilitating the identification of an individual [(Jalbrzikowski et al., 2019](https://onlinelibrary.wiley.com/doi/10.1002/hbm.25118); [Horien et al., 2019](https://www.sciencedirect.com/science/article/pii/S1053811919300886); [Finn et al., 2015)](https://www.nature.com/articles/nn.4135). Firstly, we delineated the functional data as previously described using the Shen 268 parcellation to assess the contributions of 8 functional networks on ID accuracy [(Finn et al., 2015)](https://www.nature.com/articles/nn.4135). These functional networks are as follows: (1) medial frontal; (2) frontoparietal; (3) default mode; (4) subcortical and cerebellum; (5) motor; (6) visual I; (7) visual II; and (8) visual association. Secondly, 
