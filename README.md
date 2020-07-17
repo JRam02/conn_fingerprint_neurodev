@@ -60,4 +60,6 @@ Prior FC-based studies have indicted that higher parcel resolutions may improve 
 
 ### Parcellation Coverage
 
-The spatial distribution
+The spatial distribution of FC-based measures have shown significantly lower test-retest reliability estimates when subcortical connections are considered as opposed to cortical connections [(Shah et al., 2016)](https://onlinelibrary.wiley.com/doi/full/10.1002/brb3.456). The reliability of FC estimates may suffer from the inclusion of subcortical regions due to their small volumes, close proximity to physiological sources and low SNR due to signal dropout [(Noble et al., 2019)](https://www.sciencedirect.com/science/article/pii/S1053811919307487). Therefore, we parcellated the functional data into cortical, subcortical and cerebellar regions using the Shen 268 parcellation to examine the influence of spatial brain coverage on ID accuracy. We identified the subcortical regions in the Shen 268 parcellation using the Harvard-Oxford atlas (https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Atlases) and we mapped the cerebellar regions from the Buckner atlas (http://surfer.nmr.mgh.harvard.edu/fswiki/CerebellumParcellation_Buckner2011) onto the Shen 268 parcellation. We then obtained the cortical regions by subtracting the subcortical and cerebellar areas from the whole-brain Shen 268 parcellation.
+
+### Network Organisation
