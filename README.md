@@ -21,3 +21,17 @@ Structural and functional data were obtained from the openly available [Consorti
 | Scanner Model | Magnetom Allegra | Magnetom Allegra | TrioTrim | TrioTrim | TrioTrim |
 | Field Strength | 3.0T | 3.0T | 3.0T | 3.0T | 3.0T | 
 | TR (ms) | 2000 | 2000 | 1500 | 2000 | 2000 |
+
+### Functional Connectivity Profiles
+
+We used a functionally defined Shen 268 parcellation to derive the FC profiles of each individual between sessions as described by [Finn et al. (2015)](https://www.nature.com/articles/nn.4135). For each individual, the mean timeseries of each ROI was extracted across the whole brain and the Pearson's correlation coefficient was calculated between all possible ROI pairs to conduct a symmetric 268 x 268 FC matrix; the correlation values represent the connecitivity strength (i.e. edges) between two ROIs (i.e. nodes). This procedure was repeated for each of the two imaging sessions such that an individual had two FC matrices which reflect his/her connectivity profiles during each session. We eliminated some edges in the FC matrices for each individual due to the lack of coverage across the whole brain. We also considered only the upper triangular part of the FC matrices to remove duplicate edges in the subsequent analyses. From 35,778 edges in the functional connectome, there were 31,878 distinct edges which remained in the NYUadu dataset, 15,051 edges in the NYUado dataset, 30,381 edges in the UPSM dataset, 27,028 edges in the BNU dataset and 28,680 edges in the SWU dataset.
+
+### Identification Procedure
+
+Identification was performed by creating a "database" which stored all the FC matrices of each individual from session 1. Iteratively, the FC matrix from a given individual from session 2 was then selected and this FC matrix was treated as the "target matrix". The target matrix was then compared with each of the FC matrices in the database to find the corresponding matrix which is maximally correlated with each other. An individual is correctly identified if the FC matrices in the database and target matrix share the highest Pearson's correlation coefficient. The predicted identity (ID) was compuated using two approaches:
+1. binary identification (BID): ID was assigned a score of 1 if the predicted identity matched the true identity of the individual, otherwise the ID was given a score of 0.
+2. relative rank (RR): RR is a continous measure ranging from 0 to 1, and quantifies the degree of "confusion" for inaccurately identified individuals such that the fewer individuals inaccurately ranked above their true ID, the lower the degree of confusion and lower the RR.
+
+The ID accuracy for each dataset was computed as the percentage of individuals who were correctly identified out of the total number of individuals in each dataset. We then averaged the ID accuracy for each dataset by exchanging the roles of the database-target matrix. The identification procedure was repeated until the FC matrices of each subject served as target matrices across the five datasets and two database-target matrix configurations.
+
+### Head Motion
