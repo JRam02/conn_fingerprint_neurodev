@@ -48,4 +48,6 @@ Recent work has shown that greater connectome distinctiveness, i.e. the degree t
 
 ### Global Signal Regression (GSR)
 
-GSR
+GSR has been applied as a denoising strategy to account for physiological noise related to head motion, respiration, cardiac processes and blood vessels [(Colenbier et al., 2020](https://www.sciencedirect.com/science/article/pii/S1053811920301865?dgcid=rss_sd_all); [Power et al., 2017](https://pubmed.ncbi.nlm.nih.gov/27751941/); [Fox et al., 2009)](https://pubmed.ncbi.nlm.nih.gov/19339462/). Although GSR remains a controversial preprocessing step till date, it is highly efficient in removing the positive associations between motion parameters and FC-based measures [(Power et al., 2017](https://pubmed.ncbi.nlm.nih.gov/27751941/); [Power et al., 2014](https://www.sciencedirect.com/science/article/pii/S1053811913009117); [Yan et al., 2013)](https://pubmed.ncbi.nlm.nih.gov/23631983/), increasing the specificity of positive correlations between brain regions [(Weissenbacher et al., 2009](https://pubmed.ncbi.nlm.nih.gov/19442749/); [Fox et al., 2009)](https://pubmed.ncbi.nlm.nih.gov/19339462/), and improving the presence of neuroanatomical networks [(Fox et al., 2009)](https://pubmed.ncbi.nlm.nih.gov/19339462/). We preprocssed the functional data with and without regressing out the global signal in the fMRI timeseries to assess the effectiveness of GSR in boosting the ID accuracy.
+
+### Parcellation Schemes
