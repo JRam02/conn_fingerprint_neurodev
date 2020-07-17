@@ -35,3 +35,17 @@ Identification was performed by creating a "database" which stored all the FC ma
 The ID accuracy for each dataset was computed as the percentage of individuals who were correctly identified out of the total number of individuals in each dataset. We then averaged the ID accuracy for each dataset by exchanging the roles of the database-target matrix. The identification procedure was repeated until the FC matrices of each subject served as target matrices across the five datasets and two database-target matrix configurations.
 
 ### Head Motion
+
+Failure to control for gross motion has the potential to bias the true estimates of FC-based measures as there is an inverse relationship between FC patterns and head movements, especially in developmental cohorts [(Satterthwaite et al., 2012)](https://pubmed.ncbi.nlm.nih.gov/22233733/). In order to avoid head motion in confounding the ID accuracy, we excluded high-motion individuals in the five datasets by using a root-mean-square framewise displacement (rmsFD) threshold as implemented by [Jenkinson et al. (2002)](https://pubmed.ncbi.nlm.nih.gov/12377157/). We selected an rmsFD threshold that is neither very strict (e.g. rmsFD < 0.1mm) nor very liberal (e.g. rmsFD > 0.3-0.5mm). We retained all the low-motion individuals with rmsFD <= 0.2mm in either imaging session. We then determined whether there was a relationship between head motion and ID accuracy in both imaging sessions.
+
+### Temporal Signal-to-Noise Ratio (tSNR)
+
+tSNR provides a measure of the noise characteristics in the fMRI timeseries over time which may stem from physiological (e.g. motion, respiration, cardiac processes) and scanner-related (e.g. scanner drifts, field inhomogeneity) artefacts [(Welvaert et al., 2013)](https://pubmed.ncbi.nlm.nih.gov/24223118/). Gains in tSNR have offered the potential to detect small fluctuations in the fMRI signal at higher spatial resolutions in addition to localising finer brain areas [(Murphy et al., 2007)](https://pubmed.ncbi.nlm.nih.gov/17126038/). We tested if there was an association between tSNR and ID accuracy to understand how the quality of the fMRI signal affects the individual functional connectome.
+
+### Age
+
+Recent work has shown that greater connectome distinctiveness, i.e. the degree to which an individual connectome differentiates that person from a group is associaed with increasing age during a critical period that spans puberty [(Kaufmann et al., 2017)](https://www.nature.com/articles/nn.4511). We examined age-related variability in ID accuracy that spanned across childhood to adulthood.
+
+### Global Signal Regression (GSR)
+
+GSR
