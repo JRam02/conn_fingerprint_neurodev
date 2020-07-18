@@ -16,7 +16,7 @@ Structural and functional data were obtained from the openly available [Consorti
 | Age Range (years) | 18-43 | 7-13 | 14-19 | 19-23 | 18-25 |
 | Gender (M:Male F:Female) | M:16 F:15 | M:15 F:10 | M:34 F:33 | M:32 F:28 | M:33 F:49 |
 | Scan Duration (min) | 06:00 | 06:00 | 05:06 | 08:06 | 08:00 |
-| Retest Scans | Same day | Same day | 1-4 years | 3 months | 1 year |
+| Time Between Retest Scans | Same day | Same day | 1-4 years | 3 months | 1 year |
 | Scanner Manufacturer | Siemens | Siemens | Siemens | Siemens | Siemens |
 | Scanner Model | Magnetom Allegra | Magnetom Allegra | TrioTrim | TrioTrim | TrioTrim |
 | Field Strength | 3.0T | 3.0T | 3.0T | 3.0T | 3.0T | 
