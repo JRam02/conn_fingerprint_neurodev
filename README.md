@@ -77,3 +77,7 @@ Previous studies showed that longer timepoints are required to boost the individ
 ## Accessing openly available files and scripts
 
 * To extract the ROIs' timeseries, a parcellation scheme in the MNI152 standard space such as `shen_2mm_268_parcellation.nii` in `Parcellations` can be used. The `extract_fMRI_timeseries` script in `Scripts` requires the preprocessed fMRI data of every individual in the cohort and a predefined parcellation scheme as input. Run `./extract_fMRI_timeseries.sh` in a bash terminal to execute the command and extract the fMRI timeseries.
+
+* The identification procedure was implemented in the `fMRI_fingerprint_connectome.py` script which can be found in `Scripts`. As input, the fMRI timeseries of two imaging sessions are needed for each individual and the script will generate a text file which stores the subject-wise correlation matrix (N x N) for each dataset. Of note, zero values in the timeseries which are introduced by a parcellation scheme due to limited coverage are removed, otherwise the correlation matrix will include NaN values. Run `python3.7 fMRI_fingerprint_connectome.py` in a Python environment or use a Cloud-based platform (e.g. Google Colab) to execute the command.
+
+* The ID accuracy can be obtained
