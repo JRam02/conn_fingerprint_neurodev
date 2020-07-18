@@ -84,8 +84,8 @@ Previous studies showed that longer timepoints are required to boost the individ
 
 * **Compute ID accuracy using RR approach:** Using the `ID_accuracy_relative_rank.py` script in `Scripts`, the input file which stores the subject-wise correlation matrix of a dataset is required. The script will produce the success rate of the dataset which represents the degree of confusion for incorrectly identifying individuals. For example, a success rate of 0.05 indicates that ony 5% of the individuals in a dataset have inaccurately identified, thus the lower the degree of confusion and higher the ID accuracy. However, a success rate of 0.60 indicates that 60% of the individuals in that dataset have been incorrectly identified, thus the higher the degree of confusion and lower the ID accuracy. Run `python3.7 ID_accuracy_relative_rank.py` in a Python environment or a Cloud-based platform (e.g. Google Colab) to execute the command.
 
-* **Parcellation Schemes:** Four 
+* **Parcellation Schemes:** Four publicly available parcellation schemes were used including Shen 268, Glasser 360, MIST 444 and Schaefer 1000-17Networks which are stored in `Parcellations`. All the parcellation schemes were registered in the MNI152 standard space and they were resampled at a resolution of 2x2x2mm.
 
-* **Parcel Resolutions:**
+* **Parcel Resolutions:** Three publicly available parcellation schemes were employed with different levels of parcel dimensionality and they are available in `Parcel Resolutions`. The Schaefer 17Networks parcellation scheme has 8 levels of dimensionality ranging from 100 to 1000 parcels. The MIST parcellation scheme provides 10 levels of dimensionality ranging from 7 to 1095 parcels. The DiFuMo parcellation scheme offers 5 levels of dimensionality ranging from 64 to 1024 parcels.
 
 * **Definitions of functional networks:**
