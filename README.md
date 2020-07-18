@@ -76,4 +76,4 @@ Previous studies showed that longer timepoints are required to boost the individ
 
 ## Accessing openly available files and scripts
 
-* To extract the ROIs' timeseries, a parcellation scheme such as `shen_2mm_268_parcellation.nii` in `Parcellations` can be used. The `extract_fMRI_timeseries` code in `Scripts` requires the preprocessed fMRI data of every individual in the cohort and a predefined parcellation scheme as input. Run `./extract_fMRI_timeseries.sh` in a bash terminal to execute the command and extract the fMRI timeseries.
+* To extract the ROIs' timeseries, a parcellation scheme in the MNI152 standard space such as `shen_2mm_268_parcellation.nii` in `Parcellations` can be used. The `extract_fMRI_timeseries` code in `Scripts` requires the preprocessed fMRI data of every individual in the cohort and a predefined parcellation scheme as input. Run `./extract_fMRI_timeseries.sh` in a bash terminal to execute the command and extract the fMRI timeseries.
